@@ -18,11 +18,25 @@ function addServiceInteractive
 		read serviceFriendlyName
 	done
 
+	while [ "$serviceDescription" = "" ]
+	do
+		echo "Enter a description for your service, '$serviceName':"
+		read serviceDescription
+	done
+
 	while [ ! "$genInfoPage" = "yes" ] && [ ! "$genInfoPage" = "no" ]
 	do
 		echo "Would you like an informative page to be created for this service? (yes/no):"
 		read genInfoPage
 	done
+
+	if [ $(isServiceExist "$serviceName") = "false" ]
+	then
+		addService "$serviceName" "" "" ""
+	else
+		echo -e "Error occured while creating service: '$serviceName'!\n"
+		echo "A service with the name '$serviceName' already exists."
+	fi
 
 }
 
@@ -35,7 +49,15 @@ function console
 	do
 		echo ">>>"
 		read cmd
-		interpret $cmd
+		if [ "$cmd" = "addservice" ] || [ "$cmd" = "as" ]
+		then
+			#Start the interactive service creation tool
+			addServiceInteractive
+		elif [ "$cmd" = "help" ]
+		then
+			#Show a list of commands
+			showHelp
+		fi
 	done
 
 }
