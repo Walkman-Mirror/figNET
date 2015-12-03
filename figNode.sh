@@ -28,13 +28,13 @@ function syncNetwork
 		nodes=$(cat ../nodes.list)
 		for node in $nodes
 		do
-
+			#echo "syncing with node"
 			syncWith $node
-			sleep $sleepBtwnNodeSync
+			sleep $sleepBtwnNodeSync"m"
 
 		done
 
-		sleep $sleepBtwnNetworkSync
+		sleep $sleepBtwnNetworkSync"m"
 
 	done
 
