@@ -1,3 +1,10 @@
+function servefigWeb #Start the figWeb web-server
+{
+
+	webfsd -i $figWebIP -p $figWebPort -r infoPage/index.html
+
+}
+
 function generateHomeLoop
 {
 
@@ -18,6 +25,10 @@ function generateHomeLoop
 		</font></center></body>
 
 </html>"
+
+		echo "$page" > infoPage/index.html
+
+		sleep 60 #Wait 60 seconds before re-generating a fresh figWeb `index.html` file (in infoPage/index.html)
 
 	done
 
