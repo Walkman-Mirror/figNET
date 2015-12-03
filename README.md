@@ -1,0 +1,2 @@
+# figNET
+A decentralized network.
