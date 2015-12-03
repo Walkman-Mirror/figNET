@@ -58,10 +58,10 @@ function generateHomeLoop
 			<h2><u>Node information</u></h2>
 			<p><b>Node's name: </b>$nodeName</p>
 			<p><b>Node's hostname: </b>$HOSTNAME</p>
-			<p><><></p>
-			<p><><></p>
-			<p><><></p>
-			<p><><></p>
+			<p><b>Node's location: </b>$nodeLocation</p>
+			<p><b>SysOp: </b>$nodeOperator</p>
+			<p><b>SysOp's email address: </b><a href=\"mailto:$nodeOperatorMail\">$nodeOperatorMail</a></p>
+			<p><b></b></p>
 
 		</font></center></body>
 
