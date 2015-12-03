@@ -51,7 +51,7 @@ function isServiceExist
 
 }
 
-function isInfoPageEnabled
+function isInfoPage
 {
 
 	if [ $# = 1 ] #Check arity (Arity is 1) [serviceName]
@@ -64,18 +64,5 @@ function isInfoPageEnabled
 		fi
 
 	fi
-
-}
-
-function countServices #Get the number of services running on this node
-{
-
-	serviceCoun=0
-	for service in $(ls data/)
-	do
-		serviceCount=$(($serviceCount+1))
-	done
-
-	echo $serviceCount
 
 }
