@@ -41,19 +41,29 @@ function importLibs
 
 }
 
+function killFig
+{
+
+	echo "todo"
+	echo "no" > status #Stop node syncer
+
+}
+
+function startFig
+{
+
+	serveNetwork &
+	syncNetwork &
+
+}
+
 function init
 {
 
 	importLibs
 	outText "Starting node..."
 
-	outText "Starting 'webfsd' web-server..."
-	serveNetwork &
-	outText "Web server 'webfsd' has been started."
-
-	outText "Starting network sync daemon..."
-	syncNetwork &
-	outText "Network sync daemon has been started."
+	startFig
 
 	outText "Node has been started."
 	outText "Enjoy figNET and be a good-moralled person. :)"

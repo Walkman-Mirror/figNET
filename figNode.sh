@@ -22,7 +22,7 @@ function syncNetwork
 {
 
 	cd data/
-	while [ $(getState) = "on" ]
+	while [ $(cat ../status) = "on" ]
 	do
 
 		nodes=$(cat ../nodes.list)
@@ -37,17 +37,5 @@ function syncNetwork
 		sleep $sleepBtwnNetworkSync
 
 	done
-
-}
-
-function getState
-{
-
-	if [ $(cat ../state) = "off" ]
-	then
-		echo "off"
-	else
-		echo "on"
-	fi
 
 }
