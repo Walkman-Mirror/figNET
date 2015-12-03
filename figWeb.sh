@@ -5,6 +5,13 @@ function servefigWeb #Start the figWeb web-server
 
 }
 
+function generateInfoPageLoop
+{
+
+	echo "todo"
+
+}
+
 function generateHomeLoop
 {
 
