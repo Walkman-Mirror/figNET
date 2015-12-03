@@ -6,7 +6,7 @@
 function serveNetwork
 {
 
-	webfsd -s $yourIP -p $yourPort -r data/ #Start webserver
+	webfsd -i $internalIP -p $internalPort -r data/ #Start webserver
 
 }
 
