@@ -22,7 +22,7 @@ function syncNetwork
 {
 
 	cd data/
-	while [ $(cat ../status) = "on" ]
+	while [ $(cat ../state) = "on" ]
 	do
 
 		nodes=$(cat ../nodes.list)
