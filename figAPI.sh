@@ -14,19 +14,21 @@ function addService
 {
 
 	serviceName=$1
+	serviceFriendlyName=$2
+	serviceDescription=$3
+	generateInfoPage=$4
 
-	if [ $# = 1 ] #Check for correct arity (arity is 1)
+	if [ $# = 4 ] #Check for correct arity (arity is 4) [serviceName,friendlyName,serviceDescription,true/false for generateInfoPage]
 	then
 		#Check if a service with that name already exists
 		if [ $(isServiceExist "$serviceName") = "false" ]
 		then
 			mkdir "data/$serviceName/" #Create the service
-			echo "created_service"
-		else
-			echo "service_already_exists" #Don't create the service as a service with that name already exists
+			echo "infoPageGen=\"$generateInfoPage\"
+friendlyName=\"$serviceFriendlyName\"
+description=\"$serviceDescription\"
+			" > "data/$serviceName/.info" #Generate '.info' file for the service
 		fi
-	else
-		echo "arity_error"
 	fi
 }
 
@@ -45,6 +47,22 @@ function isServiceExist
 		fi
 	else
 		echo "arity_error"
+	fi
+
+}
+
+function isInfoPage
+{
+
+	if [ $# = 1 ] #Check arity (Arity is 1) [serviceName]
+	then
+		serviceName=$1
+		if [ $(isServiceExist "$serviceName") = "true" ]
+		then
+			source "data/$serviceName/.info"
+			echo "$generateInfoPage"
+		fi
+
 	fi
 
 }
