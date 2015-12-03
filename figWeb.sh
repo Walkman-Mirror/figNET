@@ -28,7 +28,7 @@ function generateInfoPageLoop
 	do
 
 		source "data/$service/.info"
-		if [ $infoPageGen = "true" ] #Generate an infoPage for this service
+		if [ $(isInfoPageEnabled "$service") = "true" ] #Generate an infoPage for this service
 		then
 			generateInfoPage "$service" "$serviceFriendlyName" "$serviceDescription" > "figWebs/$service.html"
 		fi
@@ -54,6 +54,14 @@ function generateHomeLoop
 			<h1>$nodeName</h1>
 			<h3>Running on figNET <i>v$figNET_VERSION</i></h3>
 			<hr>
+
+			<h2><u>Node information</u></h2>
+			<p><b>Node's name: </b>$nodeName</p>
+			<p><b>Node's hostname: </b>$HOSTNAME</p>
+			<p><><></p>
+			<p><><></p>
+			<p><><></p>
+			<p><><></p>
 
 		</font></center></body>
 
