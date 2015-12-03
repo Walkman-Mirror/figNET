@@ -44,6 +44,12 @@ function addServiceInteractive
 		echo "A service with the name '$serviceName' already exists."
 	fi
 
+	#Reset all values
+	serviceName=""
+	serviceFriendlyName=""
+	serviceDescription=""
+	genInfoPage=""
+
 }
 
 function console
