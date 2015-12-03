@@ -25,7 +25,7 @@ function getConfig
 function checkConfig
 {
 
-	if [ "$internalIP" = "" ] && [ "$internalPort" = "" ] && [ "$publicIP" = "" ] && [ "$publicPort" = "" ] && [ "$nodeName" = "" ] && [ "$nodeLocation" = "" ] && [ "$nodeOperator" = "" ] && [ "$sleepBtwnNodeSync" = "" ] && [ "$sleepBtwnNetworkSync" = "" ]
+	if [ "$internalIP" = "" ] || [ "$internalPort" = "" ] || [ "$publicIP" = "" ] || [ "$publicPort" = "" ] || [ "$nodeName" = "" ] || [ "$nodeLocation" = "" ] || [ "$nodeOperator" = "" ] || [ "$sleepBtwnNodeSync" = "" ] || [ "$sleepBtwnNetworkSync" = "" ] || [ "$usefigCTL" = "" ]
 	then
 		exit
 	fi
