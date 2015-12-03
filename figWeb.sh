@@ -5,10 +5,36 @@ function servefigWeb #Start the figWeb web-server
 
 }
 
+function generateInfoPage
+{
+
+	serviceName=$1
+	serviceFriendlyName=$2
+	serviceDescription=$3
+
+	page="
+
+
+"
+
+	echo "$page" #Return the infoPage's HTML code
+
+}
+
 function generateInfoPageLoop
 {
 
-	echo "todo"
+	for service in $(getServices)
+	do
+
+		source "data/$service/.info"
+		if [ $infoPageGen = "true" ] #Generate an infoPage for this service
+		then
+			generateInfoPage "$service" "$serviceFriendlyName" "$serviceDescription" > "figWebs/$service.html"
+		fi
+
+	done
+	#echo "todo"
 
 }
 
