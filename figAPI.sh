@@ -66,3 +66,15 @@ function isInfoPage
 	fi
 
 }
+
+function countServices
+{
+
+	serviceCount=0
+	for service in $(ls data/)
+	do
+		serviceCount=$(($serviceCount+1))
+	done
+
+	echo $serviceCount
+}
