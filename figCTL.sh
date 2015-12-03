@@ -52,6 +52,13 @@ function addServiceInteractive
 
 }
 
+function showHelp
+{
+
+	echo "exit		Close figCTL"
+
+}
+
 function console
 {
 	clear

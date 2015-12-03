@@ -61,9 +61,20 @@ function generateHomeLoop
 			<p><b>Node's location: </b>$nodeLocation</p>
 			<p><b>SysOp: </b>$nodeOperator</p>
 			<p><b>SysOp's email address: </b><a href=\"mailto:$nodeOperatorMail\">$nodeOperatorMail</a></p>
-			<p><b></b></p>
 
 		</font></center></body>
+
+		<br>
+		<hr>
+		<br>
+
+		<footer><center><font face=\"Liberation Sans\">
+
+			<code>Built avec <3.</code>
+			<p></p>
+			<p></p>
+
+		</font></center></footer>
 
 </html>"
 
