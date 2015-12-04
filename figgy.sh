@@ -5,8 +5,10 @@
 
 function outText #Output the text in a pretty way
 {
+
 	text=$1
 	echo "{Figgy} $text"
+
 }
 
 function getConfig
@@ -44,7 +46,6 @@ function importLibs
 function killFig
 {
 
-	echo "todo"
 	echo "no" > status #Stop node syncer
 
 }
