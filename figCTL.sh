@@ -55,6 +55,7 @@ function addServiceInteractive
 function showHelp
 {
 
+	echo -e "List of available commands:\n"
 	echo "exit		Close figCTL"
 
 }
