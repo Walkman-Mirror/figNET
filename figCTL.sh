@@ -56,7 +56,11 @@ function showHelp
 {
 
 	echo -e "List of available commands:\n"
-	echo "exit		Close figCTL"
+	echo "addservice/as	Add a new service."
+	echo "stop		Stop this figNET node."
+	echo "start 		Start this figNET node."
+	echo "help		Show this screen"
+	echo "exit		Close figCTL."
 
 }
 
