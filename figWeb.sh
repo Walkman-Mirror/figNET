@@ -10,6 +10,20 @@ function serveFigWeb #Start the figWeb web-server
 
 }
 
+function generateServicesListPage
+{
+
+	echo "todo"
+
+}
+
+function generateNodesListPage
+{
+
+	echo "todo"
+
+}
+
 function generateInfoPage #Generate infoPage for a specified service
 {
 
