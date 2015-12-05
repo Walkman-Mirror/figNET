@@ -5,16 +5,38 @@ function servefigWeb #Start the figWeb web-server
 
 }
 
-function generateInfoPage
+function generateInfoPage #Generate infoPage for a specified service
 {
 
 	serviceName=$1
 	serviceFriendlyName=$2
 	serviceDescription=$3
 
-	page="
+	page="<html>
+	<head>
+		<title>Information for $serviceName | figNET</title>
+	</head>
+
+	<body><center><font face=\"Liberation Sans\">
+
+		<h1>$nodeName</h1>
+                <h3>Running on figNET <i>v$figNET_VERSION</i></h3>
+                <hr>
+
+		<h2><u>Information for service: $serviceName</u></h2>
+		<p>Service name: <b>$serviceName</b></p>
+		<p>Service friendly name: <b>$serviceFriendlyName</b></p>
+		<p><b>Description of service:</b></p>
+		<code>
+		$serviceDescription
+		</code>
 
 
+	</font></center></body>
+
+
+
+</html>
 "
 
 	echo "$page" #Return the infoPage's HTML code
