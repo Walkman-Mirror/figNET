@@ -1,4 +1,7 @@
-#figPeer
+#figNET Auto-Peering Program
+#Written by: Tristan B. Kildaire (Deavmi) - (deavmi@disroot.org)
+#License: GNU GPL v3
+#Crowbar Development
 
 function addPeer
 {

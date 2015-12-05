@@ -1,3 +1,8 @@
+#figNET Web frontend
+#Written by: Tristan B. Kildaire (Deavmi) - (deavmi@disroot.org)
+#License: GNU GPL v3
+#Crowbar Development
+
 function servefigWeb #Start the figWeb web-server
 {
 
