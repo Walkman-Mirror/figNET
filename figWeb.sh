@@ -103,6 +103,16 @@ function generateServicesList
 
 }
 
+function generateNodesList
+{
+
+	for node in $(getNodes)
+	do
+		echo "<li>$node</li>"
+	done
+
+}
+
 function generateHomeLoop
 {
 
@@ -121,9 +131,15 @@ function generateHomeLoop
 			<hr>
 
 			<h2><u>Services</u></h2>
-			<p>There are $(countServices) services running on this node</p>
+			<p>There are $(countServices) services running on this node.</p>
 			<ol>
 				$(generateServicesList)
+			</ol>
+
+			<h2><u>Nodes</u></h2>
+			<p>This node is connected to $(getNodesCount) nodes.</p>
+			<ol>
+				$(getNodesList)
 			</ol>
 
 			<h2><u>Node information</u></h2>

@@ -158,3 +158,24 @@ function getSuiteRelease #Get the release name for your current figNET suite
 	echo "$figNETSuiteRelease"
 
 }
+
+function getNodesCount
+{
+
+	nodesCount=0
+
+	nodes=$(cat nodes.list)
+	for node in $nodes
+	do
+		nodesCount=$(($nodesCount+1))
+	done
+
+	echo $nodesCount
+}
+
+function getNodes
+{
+
+	cat nodes.list
+
+}
