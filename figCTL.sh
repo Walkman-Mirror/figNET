@@ -77,9 +77,12 @@ function showHelp #Interactively show help information
 {
 	echo -e "List of available commands:\n"
 	echo "addservice/as	Add a new service."
+	echo "countservices/cs	Displays number of services on node."
 	echo "stop		Stop this figNET node."
 	echo "start 		Start this figNET node."
 	echo "help		Show this screen"
+	echo "version		Show current version of figNET suite."
+	echo "release		Show current release of figNET suite."
 	echo "exit		Close figCTL."
 
 }
