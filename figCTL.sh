@@ -30,7 +30,7 @@ function addServiceInteractive #Interactively add a new service to the network
 		read genInfoPage
 	done
 
-	if [ $(isServiceExist "$serviceName") = "false" ]
+	if [ $(isNamespaceTaken "$serviceName") = "false" ]
 	then
 		if [ "$genInfoPage" = "yes" ]
 		then
@@ -41,7 +41,7 @@ function addServiceInteractive #Interactively add a new service to the network
 		addService "$serviceName" "$serviceFriendlyName" "$serviceDescription" "$genInfoPage"
 	else
 		echo -e "Error occured while creating service: '$serviceName'!\n"
-		echo "A service with the name '$serviceName' already exists."
+		echo "The namespace '$serviceName' has already been taken."
 	fi
 
 	#Reset all values

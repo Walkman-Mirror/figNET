@@ -41,7 +41,7 @@ description=\"$serviceDescription\"
 	fi
 }
 
-function isServiceExist #Check if the given service exists on this node
+function isNamespaceTaken #Check if the given service-name is taken on this node
 {
 
 	serviceName=$1
