@@ -11,7 +11,7 @@ function outText #Output the text in a pretty way
 
 }
 
-function getConfig
+function getConfig #Import all the variables of the configuration file `node.conf`
 {
 
 	if [ -f node.conf ]
@@ -24,7 +24,7 @@ function getConfig
 
 }
 
-function checkConfig
+function checkConfig #Check if all the variables in the `node.conf` configuration file have been filled out
 {
 
 	if [ "$internalIP" = "" ] || [ "$internalPort" = "" ] || [ "$publicIP" = "" ] || [ "$publicPort" = "" ] || [ "$nodeName" = "" ] || [ "$nodeLocation" = "" ] || [ "$nodeOperator" = "" ] || [ "$sleepBtwnNodeSync" = "" ] || [ "$sleepBtwnNetworkSync" = "" ] || [ "$usefigCTL" = "" ]
@@ -34,12 +34,12 @@ function checkConfig
 
 }
 
-function importLibs
+function importLibs #Import all the code we require
 {
 
 	source figAPI.sh #Get access to all API functions (we might need the code in this script)
 	source figNode.sh #Get access to the web server starting function(s)
-	source figCTL.sh
+	source figCTL.sh #Get access to the control console for the figNET node
 
 }
 
@@ -50,13 +50,13 @@ function killFig
 
 }
 
-function startFig
-{
+#function startFig
+#{
 
-	serveNetwork &
-	syncNetwork &
+#	serveNetwork &
+#	syncNetwork &
 
-}
+#}
 
 function init
 {
@@ -64,7 +64,7 @@ function init
 	importLibs
 	outText "Starting node..."
 
-	startFig
+	startNetwork
 
 	outText "Node has been started."
 	outText "Enjoy figNET and be a good-moralled person. :)"

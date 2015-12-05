@@ -10,9 +10,11 @@ function shutdownfigNET #WIP (Do not use)
 
 }
 
-function startfigNET #WIP (Do not use)
+function startNetwork #WIP (Do not use)
 {
 
+	serveNetwork &
+	syncNetwork &
 	echo "on" > state
 
 }
