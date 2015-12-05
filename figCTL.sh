@@ -59,6 +59,20 @@ function countServicesInteractive #Count all the services interactively
 
 }
 
+function showVersion
+{
+
+	echo "figNET Suite Version: $(getSuiteVersion)"
+
+}
+
+function showRelease
+{
+
+	echo "figNET Suite Release: \"$(getSuiteRelease)\""
+
+}
+
 function showHelp #Interactively show help information
 {
 	echo -e "List of available commands:\n"
@@ -101,6 +115,12 @@ function console #The console that is used for controlling your figNET node
 		elif [ "$cmd" = "countservices" ] || [ "$cmd" = "cs" ]
 		then
 			countServicesInteractive
+		elif [ "$cmd" = "version" ]
+		then
+			showVersion
+		elif [ "$cmd" = "release" ]
+		then
+			showRelease
 		fi
 	done
 
