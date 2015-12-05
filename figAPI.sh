@@ -121,9 +121,26 @@ function countServices #Get the number of services running on this node
 	echo $serviceCount
 }
 
+function getServices #Returns a list of services on this node
+{
+
+	for namespace in $(ls data/)
+	do
+		if [ $(isValidService "$namespace") = "true" ]
+		then
+			echo "$namespace"
+		fi
+	done
+
+}
+
 function startFigWeb
 {
 
-
+#	serveFigWeb #Start web server
+	generateHomeLoop &
+	serveFigWeb
+	generateInfoPageLoop &
+	echo "Kak yeah!"
 
 }

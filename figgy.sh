@@ -40,6 +40,7 @@ function importLibs #Import all the code we require
 	source figAPI.sh #Get access to all API functions (we might need the code in this script)
 	source figNode.sh #Get access to the web server starting function(s)
 	source figCTL.sh #Get access to the control console for the figNET node
+	source figWeb.sh #Get access to the functions in `figWeb.sh`
 
 }
 
@@ -63,7 +64,7 @@ function init #Start this figNET node
 	if [ "$enableFigWeb" = "true" ]
 	then
 		outText "Starting figWeb..."
-		serveFigWeb
+		startFigWeb
 		outText "figWeb started."
 	fi
 

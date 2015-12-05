@@ -6,7 +6,7 @@
 function serveFigWeb #Start the figWeb web-server
 {
 
-	webfsd -i $figWebIP -p $figWebPort -r infoPage/index.html
+	webfsd -i $figWebIP -p $figWebPort -r figWeb/index.html
 
 }
 
@@ -105,7 +105,7 @@ function generateHomeLoop
 
 </html>"
 
-		echo "$page" > infoPage/index.html
+		echo "$page" > figWeb/index.html
 
 		sleep 60 #Wait 60 seconds before re-generating a fresh figWeb `index.html` file (in infoPage/index.html)
 
