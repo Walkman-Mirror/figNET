@@ -84,7 +84,8 @@ function console #The console that is used for controlling your figNET node
 		elif [ "$cmd" = "stop" ] #WIP (DO NOT USE)
 		then
 			echo "Stopping figNET node..."
-			killFig
+			#Work inr progress on the API level
+			stopNode
 			echo "figNET node has been stopped."
 		elif [ "$cmd" = "start" ]
 		then
