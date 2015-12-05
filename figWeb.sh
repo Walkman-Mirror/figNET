@@ -73,6 +73,8 @@ function generateInfoPageLoop
 			fi
 		done
 
+		sleep $figWebServicesRefresh
+
 	done
 
 }
@@ -105,7 +107,7 @@ function generateHomeLoop
 			<hr>
 
 			<h2><u>Services</u></h2>
-			<p>Below is a list of all the services currently available on this node:</p>
+			<p>There are $(countServices) services running on this node</p>
 			<ol>
 				$(generateServicesList)
 			</ol>
@@ -136,7 +138,7 @@ function generateHomeLoop
 
 		echo "$page" > figWeb/index.html
 
-		sleep 60 #Wait 60 seconds before re-generating a fresh figWeb `index.html` file (in infoPage/index.html)
+		sleep $figWebHomeRefresh #Wait 60 seconds before re-generating a fresh figWeb `index.html` file (in infoPage/index.html)
 
 	done
 
