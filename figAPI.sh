@@ -76,13 +76,46 @@ function isInfoPage #Check if the gievn service wants an infoPage for figWeb to 
 
 }
 
+function isValidService
+{
+
+	serviceName=$1
+
+	valid="false"
+
+	if [ -f "$serviceName/.info" ]
+	then
+		source "$serviceName/.info"
+		if [ "$genInfoPage" = "true" ] || [ "$genInfoPage" = "false" ] 
+		then
+			valid="true"
+		fi
+
+		if [ ! "$friendlyName" = "" ]
+		then
+			valid="true"
+		fi
+
+		if [ ! "$description" = "" ]
+		then
+			valid="true"
+		fi
+	fi
+
+	echo $valid
+
+}
+
 function countServices #Get the number of services running on this node
 {
 
 	serviceCount=0
 	for service in $(ls data/)
 	do
-		serviceCount=$(($serviceCount+1))
+		if [ $(isValidService "$service") = "true" ]
+		then
+			serviceCount=$(($serviceCount+1))
+		fi
 	done
 
 	echo $serviceCount
