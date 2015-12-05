@@ -25,7 +25,7 @@ function generateInfoPage #Generate infoPage for a specified service
 	<body><center><font face=\"Liberation Sans\">
 
 		<h1>$nodeName</h1>
-                <h3>Running on figNET <i>v$figNET_VERSION</i></h3>
+                <h3>Running on figNET v$(getSuiteVersion) <i>\"$(getSuiteRelease)</i>\"</h3>
                 <hr>
 
 		<h2><u>Information for service: $serviceName</u></h2>
@@ -57,7 +57,7 @@ function generateInfoPageLoop
 		source "data/$service/.info"
 		if [ $(isInfoPageEnabled "$service") = "true" ] #Generate an infoPage for this service
 		then
-			generateInfoPage "$service" "$serviceFriendlyName" "$serviceDescription" > "figWeb/$service.html"
+			generateInfoPage "$service" "$friendlyName" "$description" > "figWeb/$service.html"
 		fi
 
 	done
