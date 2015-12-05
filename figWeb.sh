@@ -49,7 +49,6 @@ function generateInfoPage #Generate infoPage for a specified service
 		<code>
 		$serviceDescription
 		</code>
-		<p><b>Service's dataspace: </b><a href=\"$publicIP:$publicPort/$serviceName\">View $serviceName on figNET</a></p>
 
 
 	</font></center></body>
