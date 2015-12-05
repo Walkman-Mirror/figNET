@@ -39,7 +39,13 @@ function generateInfoPage #Generate infoPage for a specified service
 
 	</font></center></body>
 
+	<footer><center><font face=\"Liberation Sans\">
 
+                <code>Built avec <3.</code>
+                <p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under t$
+                <p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildai$
+
+         </font></center></footer>
 
 </html>
 "
@@ -51,15 +57,28 @@ function generateInfoPage #Generate infoPage for a specified service
 function generateInfoPageLoop
 {
 
+	while [ 1 = 1 ]
+	do
+		for service in $(getServices)
+		do
+
+			source "data/$service/.info"
+			if [ $(isInfoPageEnabled "$service") = "true" ] #Generate an infoPage for this service
+			then
+				generateInfoPage "$service" "$friendlyName" "$description" > "figWeb/$service.html"
+			fi
+		done
+
+	done
+
+}
+
+function generateServicesList
+{
+
 	for service in $(getServices)
 	do
-
-		source "data/$service/.info"
-		if [ $(isInfoPageEnabled "$service") = "true" ] #Generate an infoPage for this service
-		then
-			generateInfoPage "$service" "$friendlyName" "$description" > "figWeb/$service.html"
-		fi
-
+		echo "<li><a href=\"figWeb/$service.html\">$service</a></li>"
 	done
 
 }
@@ -80,6 +99,12 @@ function generateHomeLoop
 			<h1>$nodeName</h1>
 			<h3>Running on figNET v$(getSuiteVersion) <i>\"$(getSuiteRelease)\"</i></h3>
 			<hr>
+
+			<h2><u>Services</u></h2>
+			<p>Below is a list of all the services currently available on this node:</p>
+			<ol>
+				$(generateServicesList)
+			</ol>
 
 			<h2><u>Node information</u></h2>
 			<p><b>Node's name: </b>$nodeName</p>
