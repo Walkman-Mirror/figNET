@@ -78,7 +78,7 @@ function generateHomeLoop
 		<body><center><font face=\"Liberation Sans\">
 
 			<h1>$nodeName</h1>
-			<h3>Running on figNET <i>v$figNET_VERSION</i></h3>
+			<h3>Running on figNET v$(getSuiteVersion) <i>\"$(getSuiteRelease)\"</i></h3>
 			<hr>
 
 			<h2><u>Node information</u></h2>
