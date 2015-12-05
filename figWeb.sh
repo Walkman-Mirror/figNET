@@ -6,7 +6,7 @@
 function serveFigWeb #Start the figWeb web-server
 {
 
-	webfsd -i $figWebIP -p $figWebPort -r figWeb/index.html
+	webfsd -i $figWebIP -p $figWebPort -f figWeb/index.html
 
 }
 
