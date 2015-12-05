@@ -46,10 +46,10 @@ function generateInfoPage #Generate infoPage for a specified service
 	<footer><center><font face=\"Liberation Sans\">
 
                 <code>Built avec <3.</code>
-                <p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under t$
-                <p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildai$
+		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
+		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
-         </font></center></footer>
+        </font></center></footer>
 
 </html>
 "
