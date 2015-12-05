@@ -144,3 +144,17 @@ function startFigWeb
 	echo "Kak yeah!"
 
 }
+
+function getSuiteVersion #Get the version for the your current figNET suite
+{
+
+	echo "$figNETSuiteVersion"
+
+}
+
+function getSuiteRelease #Get the release name for your current figNET suite
+{
+
+	echo "$figNETSuiteRelease"
+
+}

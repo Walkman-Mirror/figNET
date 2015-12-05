@@ -41,6 +41,7 @@ function importLibs #Import all the code we require
 	source figNode.sh #Get access to the web server starting function(s)
 	source figCTL.sh #Get access to the control console for the figNET node
 	source figWeb.sh #Get access to the functions in `figWeb.sh`
+	source figInfo.sh #Get access to variables containing info about the current release of the figNET suite
 
 }
 
