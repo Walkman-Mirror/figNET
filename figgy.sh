@@ -43,7 +43,7 @@ function importLibs #Import all the code we require
 
 }
 
-function killFig
+function killFig #Stop this figNET node
 {
 
 	echo "no" > status #Stop node syncer
@@ -56,7 +56,7 @@ function init #Start this figNET node
 	importLibs
 	outText "Starting node..."
 
-	startNode
+	startNetwork
 
 	outText "Node has been started."
 	outText "Enjoy figNET and be a good-moralled person. :)"
