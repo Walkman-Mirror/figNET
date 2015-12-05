@@ -52,11 +52,10 @@ function generateInfoPageLoop
 		source "data/$service/.info"
 		if [ $(isInfoPageEnabled "$service") = "true" ] #Generate an infoPage for this service
 		then
-			generateInfoPage "$service" "$serviceFriendlyName" "$serviceDescription" > "figWebs/$service.html"
+			generateInfoPage "$service" "$serviceFriendlyName" "$serviceDescription" > "figWeb/$service.html"
 		fi
 
 	done
-	#echo "todo"
 
 }
 
