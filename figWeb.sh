@@ -29,8 +29,8 @@ function generateInfoPage #Generate infoPage for a specified service
                 <hr>
 
 		<h2><u>Information for service: $serviceName</u></h2>
-		<p>Service name: <b>$serviceName</b></p>
-		<p>Service friendly name: <b>$serviceFriendlyName</b></p>
+		<p><b>Service name: </b>$serviceName</p>
+		<p><b>Service friendly name: </b>$serviceFriendlyName</p>
 		<p><b>Description of service:</b></p>
 		<code>
 		$serviceDescription
