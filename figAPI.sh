@@ -83,10 +83,10 @@ function isValidService
 
 	valid="false"
 
-	if [ -f "$serviceName/.info" ]
+	if [ -f "data/$serviceName/.info" ]
 	then
-		source "$serviceName/.info"
-		if [ "$genInfoPage" = "true" ] || [ "$genInfoPage" = "false" ] 
+		source "data/$serviceName/.info"
+		if [ "$infoPageGen" = "true" ] || [ "$genInfoPage" = "false" ] 
 		then
 			valid="true"
 		fi

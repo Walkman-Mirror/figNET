@@ -52,9 +52,15 @@ function addServiceInteractive #Interactively add a new service to the network
 
 }
 
-function showHelp #Interactively show help information
+function countServicesInteractive #Count all the services interactively
 {
 
+	echo "Number of services on this node: $(countServices)"
+
+}
+
+function showHelp #Interactively show help information
+{
 	echo -e "List of available commands:\n"
 	echo "addservice/as	Add a new service."
 	echo "stop		Stop this figNET node."
@@ -90,8 +96,11 @@ function console #The console that is used for controlling your figNET node
 		elif [ "$cmd" = "start" ]
 		then
 			echo "Starting figNET node..."
-			startFig
+			startNode
 			"figNET node has been started."
+		elif [ "$cmd" = "countservices" ] || [ "$cmd" = "cs" ]
+		then
+			countServicesInteractive
 		fi
 	done
 
