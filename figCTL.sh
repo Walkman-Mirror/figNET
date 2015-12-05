@@ -3,7 +3,7 @@
 #License: GNU GPL v3
 #Crowbar Development
 
-function addServiceInteractive
+function addServiceInteractive #Interactively add a new service to the network
 {
 
 	while [ "$serviceName" = "" ]
@@ -52,7 +52,7 @@ function addServiceInteractive
 
 }
 
-function showHelp
+function showHelp #Interactively show help information
 {
 
 	echo -e "List of available commands:\n"
@@ -64,7 +64,7 @@ function showHelp
 
 }
 
-function console
+function console #The console that is used for controlling your figNET node
 {
 	clear
 	echo "Welcome to figCTL!"
