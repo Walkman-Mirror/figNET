@@ -3,14 +3,14 @@
 #License: GNU GPL v3
 #Crowbar Development
 
-function serveNetwork
+function serveNetwork #Start the web-server (webfsd) for serving your `data/` directory to all other nodes
 {
 
 	webfsd -i $internalIP -p $internalPort -r data/ #Start webserver
 
 }
 
-function syncWith
+function syncWith #Sync with a given node
 {
 
 	nodeAddr=$1
@@ -18,7 +18,7 @@ function syncWith
 
 }
 
-function syncNetwork
+function syncNetwork #Sync with each node in your `nodes.list` file
 {
 
 	cd data/
