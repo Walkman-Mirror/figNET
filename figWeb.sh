@@ -39,6 +39,10 @@ function generateInfoPage #Generate infoPage for a specified service
 
 	</font></center></body>
 
+	<br>
+	<hr>
+	<br>
+
 	<footer><center><font face=\"Liberation Sans\">
 
                 <code>Built avec <3.</code>
