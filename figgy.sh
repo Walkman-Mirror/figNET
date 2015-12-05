@@ -56,7 +56,7 @@ function init #Start this figNET node
 	importLibs
 	outText "Starting node..."
 
-	startNetwork
+	startNode
 
 	outText "Node has been started."
 	outText "Enjoy figNET and be a good-moralled person. :)"

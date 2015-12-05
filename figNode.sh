@@ -37,5 +37,6 @@ function syncNetwork #Sync with each node in your `nodes.list` file
 		sleep $sleepBtwnNetworkSync"m"
 
 	done
+	echo poes
 
 }
