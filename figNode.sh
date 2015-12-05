@@ -24,7 +24,7 @@ function syncNetwork #Sync with each node in your `nodes.list` file
 	cd data/
 	while [ $(cat ../state) = "on" ]
 	do
-		echo "Syncing (TEMP)"
+		#echo "Syncing (TEMP)"
 		nodes=$(cat ../nodes.list)
 		for node in $nodes
 		do
