@@ -42,6 +42,7 @@ function importLibs #Import all the code we require
 	source figCTL.sh #Get access to the control console for the figNET node
 	source figWeb.sh #Get access to the functions in `figWeb.sh`
 	source figInfo.sh #Get access to variables containing info about the current release of the figNET suite
+	source figAutoPeer.sh #Get access to all the auto-peering-related functions
 
 }
 
@@ -61,6 +62,14 @@ function init #Start this figNET node
 	outText "Starting node sync..."
 	startNode
 	outText "Sync started."
+
+	#outText "Starting auto-peering system..."
+
+	#outText "Adding this node to the public nodes list..."
+	#Put code here
+	#outText "Node has been added to the public node list."
+
+	#outText "Auto-peering system started."
 
 	if [ "$enableFigWeb" = "true" ]
 	then
