@@ -73,7 +73,7 @@ function showHelp #Interactively show help information
 function console #The console that is used for controlling your figNET node
 {
 	clear
-	echo "Welcome to figCTL!"
+	echo "Welcome to figCTL v$(getSuiteVersion) \"$(getSuiteRelease)\""
 
 	while [ ! "$cmd" = "exit" ]
 	do

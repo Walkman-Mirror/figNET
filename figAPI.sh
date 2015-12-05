@@ -60,16 +60,16 @@ function isNamespaceTaken #Check if the given service-name is taken on this node
 
 }
 
-function isInfoPage #Check if the gievn service wants an infoPage for figWeb to be generated
+function isInfoPageEnabled #Check if the gievn service wants an infoPage for figWeb to be generated
 {
 
 	if [ $# = 1 ] #Check arity (Arity is 1) [serviceName]
 	then
 		serviceName=$1
-		if [ $(isServiceExist "$serviceName") = "true" ]
+		if [ $(isValidService "$serviceName") = "true" ]
 		then
 			source "data/$serviceName/.info"
-			echo "$generateInfoPage"
+			echo "$infoPageGen"
 		fi
 
 	fi
@@ -86,7 +86,7 @@ function isValidService
 	if [ -f "data/$serviceName/.info" ]
 	then
 		source "data/$serviceName/.info"
-		if [ "$infoPageGen" = "true" ] || [ "$genInfoPage" = "false" ] 
+		if [ "$infoPageGen" = "true" ] || [ "$infoPageGen" = "false" ] 
 		then
 			valid="true"
 		fi
@@ -141,7 +141,7 @@ function startFigWeb
 	generateHomeLoop &
 	serveFigWeb
 	generateInfoPageLoop &
-	echo "Kak yeah!"
+#	echo "Kak yeah!"
 
 }
 
