@@ -66,8 +66,12 @@ function init #Start this figNET node
 	#outText "Starting auto-peering system..."
 
 	#outText "Adding this node to the public nodes list..."
-	#Put code here
+	#addMyself
 	#outText "Node has been added to the public node list."
+
+	#outText "Auto-peering taking place..."
+	#findPeers
+	#outText "Auto-peering completed."
 
 	#outText "Auto-peering system started."
 
