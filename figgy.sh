@@ -50,15 +50,7 @@ function killFig
 
 }
 
-#function startFig
-#{
-
-#	serveNetwork &
-#	syncNetwork &
-
-#}
-
-function init
+function init #Start this figNET node
 {
 
 	importLibs
