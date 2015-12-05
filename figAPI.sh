@@ -3,14 +3,21 @@
 #License: GNU GPL v3
 #Crowbar Development
 
-function shutdownfigNET #WIP
+function shutdownfigNET #WIP (Do not use)
 {
 
-	echo "off" > status
+	echo "off" > state
 
 }
 
-function addService
+function startfigNET #WIP (Do not use)
+{
+
+	echo "on" > state
+
+}
+
+function addService #Add a new service to the network
 {
 
 	serviceName=$1
@@ -32,7 +39,7 @@ description=\"$serviceDescription\"
 	fi
 }
 
-function isServiceExist
+function isServiceExist #Check if the given service exists on this node
 {
 
 	serviceName=$1
@@ -51,7 +58,7 @@ function isServiceExist
 
 }
 
-function isInfoPage
+function isInfoPage #Check if the gievn service wants an infoPage for figWeb to be generated
 {
 
 	if [ $# = 1 ] #Check arity (Arity is 1) [serviceName]
@@ -67,7 +74,7 @@ function isInfoPage
 
 }
 
-function countServices
+function countServices #Get the number of services running on this node
 {
 
 	serviceCount=0
