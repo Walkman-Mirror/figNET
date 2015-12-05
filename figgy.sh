@@ -56,7 +56,16 @@ function init #Start this figNET node
 	importLibs
 	outText "Starting node..."
 
+	outText "Starting node sync..."
 	startNode
+	outText "Sync started."
+
+	if [ "$enableFigWeb" = "true" ]
+	then
+		outText "Starting figWeb..."
+		serveFigWeb
+		outText "figWeb started."
+	fi
 
 	outText "Node has been started."
 	outText "Enjoy figNET and be a good-moralled person. :)"

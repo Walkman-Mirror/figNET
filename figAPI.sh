@@ -120,3 +120,10 @@ function countServices #Get the number of services running on this node
 
 	echo $serviceCount
 }
+
+function startFigWeb
+{
+
+
+
+}

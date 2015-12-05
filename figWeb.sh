@@ -3,7 +3,7 @@
 #License: GNU GPL v3
 #Crowbar Development
 
-function servefigWeb #Start the figWeb web-server
+function serveFigWeb #Start the figWeb web-server
 {
 
 	webfsd -i $figWebIP -p $figWebPort -r infoPage/index.html
