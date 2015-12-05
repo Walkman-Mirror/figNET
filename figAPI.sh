@@ -3,14 +3,14 @@
 #License: GNU GPL v3
 #Crowbar Development
 
-function shutdownfigNET #WIP (Do not use)
+function stopNode #WIP (Do not use)
 {
 
 	echo "off" > state
 
 }
 
-function startNetwork #WIP (Do not use)
+function startNode #WIP (Do not use)
 {
 
 	serveNetwork &
