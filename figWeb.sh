@@ -42,6 +42,9 @@ function generateServicesListPage #wip
 
 	<footer><center><font face=\"Liberation Sans\">
 
+		<code>Page last generated: $(date)</code>
+		<br>
+		<br>
                 <code>Built avec <3.</code>
 		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
@@ -91,6 +94,9 @@ function generateNodesListPage #wip
 
 	<footer><center><font face=\"Liberation Sans\">
 
+		<code>Page last generated: $(date)</code>
+		<br>
+		<br>
                 <code>Built avec <3.</code>
 		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
@@ -143,6 +149,9 @@ function generateInfoPage #Generate infoPage for a specified service
 
 	<footer><center><font face=\"Liberation Sans\">
 
+		<code>Page last generated: $(date)</code>
+		<br>
+		<br>
                 <code>Built avec <3.</code>
 		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
@@ -214,13 +223,13 @@ function generateHomeLoop
 			<h3>Running on figNET v$(getSuiteVersion) <i>\"$(getSuiteRelease)\"</i></h3>
 			<hr>
 
-			<h2><u>Services</u></h2>
+			<a href=\"figWeb/services.html\"><h2><u>Services</u></h2></a>
 			<p>There are $(countServices) services running on this node.</p>
 			<ol>
 				$(generateServicesList)
 			</ol>
 
-			<h2><u>Nodes</u></h2>
+			<a href=\"figWeb/nodes.html\"><h2><u>Nodes</u></h2></a>
 			<p>This node is connected to $(getNodesCount) nodes.</p>
 			<ol>
 				$(generateNodesList)
@@ -242,7 +251,10 @@ function generateHomeLoop
 
 		<footer><center><font face=\"Liberation Sans\">
 
-			<code>Built avec <3.</code>
+			<code>Page last generated: $(date)</code>
+			<br>
+			<br>
+        	        <code>Built avec <3.</code>
 			<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 			<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
