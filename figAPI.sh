@@ -137,9 +137,10 @@ function getServices #Returns a list of services on this node
 function startFigWeb
 {
 
-#	serveFigWeb #Start web server
+	serveFigWeb #Start web server
 	generateHomeLoop &
-	serveFigWeb
+	generateServicesListPage &
+	generateNodesListPage &
 	generateInfoPageLoop &
 #	echo "Kak yeah!"
 

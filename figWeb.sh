@@ -90,7 +90,7 @@ function generateNodesListPage #wip
 </html>
 "
 
-	echo "$page" > figWeb/services.html
+	echo "$page" > figWeb/nodes.html
 
 }
 
