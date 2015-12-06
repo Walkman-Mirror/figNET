@@ -10,6 +10,13 @@ function serveFigWeb #Start the figWeb web-server
 
 }
 
+function generateDedicationsPage #wip
+{
+	
+	echo "todo"
+	
+}
+
 function generateServicesListPage #Generate the list of services page
 {
 
