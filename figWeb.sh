@@ -206,7 +206,7 @@ function generateNodesList
 
 }
 
-function generateHomeLoop
+function generateHomeLoop #Generate index.html file
 {
 
 	while [ 1 = 1 ]
