@@ -10,7 +10,7 @@ function serveFigWeb #Start the figWeb web-server
 
 }
 
-function generateServicesListPage #wip
+function generateServicesListPage #Generate the list of services page
 {
 
 	while [ 1 = 1 ]
@@ -62,7 +62,7 @@ function generateServicesListPage #wip
 
 }
 
-function generateNodesListPage #wip
+function generateNodesListPage ##Generate the list of nodes page
 {
 
 	while [ 1 = 1 ]
