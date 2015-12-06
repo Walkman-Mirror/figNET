@@ -13,6 +13,9 @@ function serveFigWeb #Start the figWeb web-server
 function generateServicesListPage #wip
 {
 
+	while [ 1 = 1 ]
+	do
+
 	page="<html>
 	<head>
 		<title>Services on $nodeName | figNET</title>
@@ -50,10 +53,17 @@ function generateServicesListPage #wip
 
 	echo "$page" > figWeb/services.html
 
+		sleep $figWebServicesRefresh
+
+	done
+
 }
 
 function generateNodesListPage #wip
 {
+
+	while [ 1 = 1 ]
+	do
 
 		page="<html>
 	<head>
@@ -91,6 +101,10 @@ function generateNodesListPage #wip
 "
 
 	echo "$page" > figWeb/nodes.html
+
+		sleep $figWebNodesRefresh
+
+	done
 
 }
 
@@ -157,7 +171,7 @@ function generateInfoPageLoop
 			fi
 		done
 
-		sleep $figWebServicesRefresh
+		sleep $figWebServicesInfoPagesRefresh
 
 	done
 
