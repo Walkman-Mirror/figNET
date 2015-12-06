@@ -180,9 +180,11 @@ function getNodes #Get list of nodes in this node
 
 }
 
-function getConf #Used for services development
+function getInfo #Used for services development
 {
 
 	source node.info
+	source figInfo.sh
+	source nodes.list
 
 }
