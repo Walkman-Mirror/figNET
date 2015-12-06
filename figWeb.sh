@@ -139,7 +139,7 @@ function generateHomeLoop
 			<h2><u>Nodes</u></h2>
 			<p>This node is connected to $(getNodesCount) nodes.</p>
 			<ol>
-				$(getNodesList)
+				$(generateNodesList)
 			</ol>
 
 			<h2><u>Node information</u></h2>
