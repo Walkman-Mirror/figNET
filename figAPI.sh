@@ -10,7 +10,7 @@ function stopNode #WIP (Do not use)
 
 }
 
-function startNode #WIP (Do not use)
+function startNode #WIP (Do not use, although we are actually alreadu using it)
 {
 
 	serveNetwork &
