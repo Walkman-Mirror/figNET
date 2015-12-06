@@ -10,17 +10,87 @@ function serveFigWeb #Start the figWeb web-server
 
 }
 
-function generateServicesListPage
+function generateServicesListPage #wip
 {
 
-	echo "todo"
+	page="<html>
+	<head>
+		<title>Services on $nodeName | figNET</title>
+	</head>
+
+	<body><center><font face=\"Liberation Sans\">
+
+		<h1>$nodeName</h1>
+                <h3>Running on figNET v$(getSuiteVersion) <i>\"$(getSuiteRelease)</i>\"</h3>
+                <hr>
+
+		<h2><u>Services</u></h2>
+		<p>There are $(countServices) services running on this node.</p>
+		<ol>
+			$(generateServicesList)
+		</ol>
+
+
+	</font></center></body>
+
+	<br>
+	<hr>
+	<br>
+
+	<footer><center><font face=\"Liberation Sans\">
+
+                <code>Built avec <3.</code>
+		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
+		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
+
+        </font></center></footer>
+
+</html>
+"
+
+	echo "$page" > figWeb/services.html
 
 }
 
-function generateNodesListPage
+function generateNodesListPage #wip
 {
 
-	echo "todo"
+		page="<html>
+	<head>
+		<title>Nodes on $nodeName | figNET</title>
+	</head>
+
+	<body><center><font face=\"Liberation Sans\">
+
+		<h1>$nodeName</h1>
+                <h3>Running on figNET v$(getSuiteVersion) <i>\"$(getSuiteRelease)</i>\"</h3>
+                <hr>
+
+		<h2><u>Nodes</u></h2>
+		<p>This node is connected to $(getNodesCount) nodes.</p>
+		<ol>
+			$(generateNodesList)
+		</ol>
+
+
+	</font></center></body>
+
+	<br>
+	<hr>
+	<br>
+
+	<footer><center><font face=\"Liberation Sans\">
+
+                <code>Built avec <3.</code>
+		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
+		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
+
+        </font></center></footer>
+
+</html>
+"
+
+	echo "$page" > figWeb/services.html
 
 }
 
