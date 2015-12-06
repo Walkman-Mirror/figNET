@@ -159,7 +159,7 @@ function getSuiteRelease #Get the release name for your current figNET suite
 
 }
 
-function getNodesCount
+function getNodesCount #Get number of nodes on this node
 {
 
 	nodesCount=0
@@ -173,9 +173,16 @@ function getNodesCount
 	echo $nodesCount
 }
 
-function getNodes
+function getNodes #Get list of nodes in this node
 {
 
 	cat nodes.list
+
+}
+
+function getConf #Used for services development
+{
+
+	source node.info
 
 }
