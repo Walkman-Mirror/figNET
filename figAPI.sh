@@ -181,11 +181,19 @@ function getNodes #Get list of nodes in this node
 
 }
 
-function getInfo #Used for services development
+function getInfo #Used for services development (wip - DO not use)
 {
 
-	source node.info
-	source figInfo.sh
-	source nodes.list
+
+	source figAPI.sh #Get access to all API functions (we might need the code in this script)
+	source figNode.sh #Get access to the web server starting function(s)
+	source figCTL.sh #Get access to the control console for the figNET node
+	source figWeb.sh #Get access to the functions in `figWeb.sh`
+	source figInfo.sh #Get access to variables containing info about the current release of the figNET suite
+	source figAutoPeer.sh #Get access to all the auto-peering-related functions
+
+	source node.info #Get access to configuration variables
+	#source figInfo.sh
+	#source nodes.list
 
 }
