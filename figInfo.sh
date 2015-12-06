@@ -1,3 +1,8 @@
+#figNET Software Suite information
+#Written by: Tristan B. Kildaire (Deavmi) - (deavmi@disroot.org)
+#License: GNU GPL v3
+#Crowbar Development
+
 #figNET Suite Info
 figNETSuiteVersion="0.0.1"
 figNETSuiteRelease="Awesome Alpha"
