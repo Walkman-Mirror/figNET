@@ -62,7 +62,7 @@ function generateServicesListPage #Generate the list of services page
 
 }
 
-function generateNodesListPage ##Generate the list of nodes page
+function generateNodesListPage #Generate the list of nodes page
 {
 
 	while [ 1 = 1 ]
@@ -165,7 +165,7 @@ function generateInfoPage #Generate infoPage for a specified service
 
 }
 
-function generateInfoPageLoop
+function generateInfoPageLoop #Generate pages for all services that want it
 {
 
 	while [ 1 = 1 ]
@@ -186,7 +186,7 @@ function generateInfoPageLoop
 
 }
 
-function generateServicesList
+function generateServicesList #Generate a service list item
 {
 
 	for service in $(getServices)
@@ -196,7 +196,7 @@ function generateServicesList
 
 }
 
-function generateNodesList
+function generateNodesList #Generate a node list item
 {
 
 	for node in $(getNodes)
