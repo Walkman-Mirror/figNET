@@ -30,7 +30,7 @@ function addService #Add a new service to the network
 	if [ $# = 4 ] #Check for correct arity (arity is 4) [serviceName,friendlyName,serviceDescription,true/false for generateInfoPage]
 	then
 		#Check if the namespace the new service wants is available
-		if [ $(isNamespaceTaken "$serviceName") = "false" ] && [] && [] && []
+		if [ $(isNamespaceTaken "$serviceName") = "false" ] && [ ! "$serviceName" = "" ] && [ ! "$serviceName" = "" ] && [ ! "$serviceName" = "" ] && [ ! "$serviceName" = "" ]
 		then
 			mkdir "data/$serviceName/" #Create the service
 			echo "infoPageGen=\"$generateInfoPage\"
