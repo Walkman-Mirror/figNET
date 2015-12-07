@@ -138,6 +138,7 @@ function startFigWeb
 {
 
 	serveFigWeb #Start web server
+	generateDedicationsPage & #Generate the dedications page
 	generateHomeLoop &
 	generateServicesListPage &
 	generateNodesListPage &
