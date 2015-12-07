@@ -52,7 +52,7 @@ function generateServicesListPage #Generate the list of services page
 		<code>Page last generated: $(date)</code>
 		<br>
 		<br>
-                <code>Built avec <3.</code>
+                <a href=\"figWeb/dedications.html\"><code>Built avec <3.</code></a>
 		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
@@ -104,7 +104,7 @@ function generateNodesListPage #Generate the list of nodes page
 		<code>Page last generated: $(date)</code>
 		<br>
 		<br>
-                <code>Built avec <3.</code>
+                <a href=\"figWeb/dedications.html\"><code>Built avec <3.</code></a>
 		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
@@ -159,7 +159,7 @@ function generateInfoPage #Generate infoPage for a specified service
 		<code>Page last generated: $(date)</code>
 		<br>
 		<br>
-                <code>Built avec <3.</code>
+                <a href=\"figWeb/dedications.html\"><code>Built avec <3.</code></a>
 		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
@@ -261,7 +261,7 @@ function generateHomeLoop #Generate index.html file
 			<code>Page last generated: $(date)</code>
 			<br>
 			<br>
-        	        <code>Built avec <3.</code>
+        	        <a href=\"figWeb/dedications.html\"><code>Built avec <3.</code></a>
 			<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 			<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
