@@ -27,7 +27,7 @@ function getConfig #Import all the variables of the configuration file `node.con
 function checkConfig #Check if all the variables in the `node.conf` configuration file have been filled out
 {
 
-	if [ "$internalIP" = "" ] || [ "$internalPort" = "" ] || [ "$publicIP" = "" ] || [ "$publicPort" = "" ] || [ "$nodeName" = "" ] || [ "$nodeLocation" = "" ] || [ "$nodeOperator" = "" ] || [ "$nodeOperatorMail" = "" ] || [ "$sleepBtwnNodeSync" = "" ] || [ "$sleepBtwnNetworkSync" = "" ] || [ "$usefigCTL" = "" ]
+	if [ "$internalIP" = "" ] || [ "$internalPort" = "" ] || [ "$publicIP" = "" ] || [ "$publicPort" = "" ] || [ "$nodeName" = "" ] || [ "$nodeLocation" = "" ] || [ "$nodeOperator" = "" ] || [ "$nodeOperatorMail" = "" ] || [ "$sleepBtwnNodeSync" = "" ] || [ "$sleepBtwnNetworkSync" = "" ] || [ "$usefigCTL" = "" ] || [ "$enableFigWeb" = "" ] || [ "$figWebHomeRefresh" = "" ] || [ "$figWebServicesInfoPagesRefresh" = "" ] || [ "$figWebServicesRefresh" = "" ] || [ "$figWebNodesRefresh" = "" ] || [ "$figWebIP" = "" ] || [ "$figWebPort" = "" ]
 	then
 		outText "Configuration file 'node.conf' has variables missing values."
 		exit
