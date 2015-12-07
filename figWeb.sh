@@ -25,7 +25,7 @@ function generateServicesListPage #Generate the list of services page
 
 	page="<html>
 	<head>
-		<title>Services on $nodeName | figNET</title>
+		<title>Services | figNET</title>
 	</head>
 
 	<body><center><font face=\"Liberation Sans\">
@@ -77,7 +77,7 @@ function generateNodesListPage #Generate the list of nodes page
 
 		page="<html>
 	<head>
-		<title>Nodes on $nodeName | figNET</title>
+		<title>Nodes | figNET</title>
 	</head>
 
 	<body><center><font face=\"Liberation Sans\">
