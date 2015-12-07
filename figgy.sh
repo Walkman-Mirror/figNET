@@ -1,4 +1,4 @@
-#Figgy Node Server
+#figNET Main
 #Written by: Tristan B. Kildaire (Deavmi) - (deavmi@disroot.org)
 #License: GNU GPL v3
 #Crowbar Development
