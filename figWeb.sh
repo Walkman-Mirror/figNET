@@ -32,6 +32,8 @@ function generateDedicationsPage #Generate the dedications page
 	</font></center></body>
 
 </html>"
+
+	echo "$page" > figWeb/dedications.html
 	
 }
 
