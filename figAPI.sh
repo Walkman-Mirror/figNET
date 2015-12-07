@@ -181,7 +181,7 @@ function getNodes #Get list of nodes in this node
 
 }
 
-function getInfo #Used for services development (wip - DO not use)
+function getImportSet #Used for services development (wip - DO not use)
 {
 
 
