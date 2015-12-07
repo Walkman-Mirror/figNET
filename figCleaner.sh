@@ -1,9 +1,9 @@
-#
-#
-#
-#
+#figNET Cleaner
+#Written by: Tristan B. Kildaire (Deavmi) - (deavmi@disroot.org)
+#License: GNU GPL v3
+#Crowbar Development
 
-function cleanFigWebDebris
+function cleanFigWebDebris #Cleanup `figWeb/` directory
 {
 
     for file in $(ls figWeb/)
@@ -13,9 +13,9 @@ function cleanFigWebDebris
 
 }
 
-function cleanUp
+function cleanUp #Cleanup many aspects of your 
 {
 
-    cleanFigWebDebris #Cleanup `figWeb/` if figWeb is disabled.
+    cleanFigWebDebris #Cleanup `figWeb/` directory
 
 }
