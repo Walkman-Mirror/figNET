@@ -10,7 +10,7 @@ function serveFigWeb #Start the figWeb web-server
 
 }
 
-function generateDedicationsPage #wip
+function generateDedicationsPage #Generate the dedications page
 {
 	
 	page="<html>
@@ -23,7 +23,11 @@ function generateDedicationsPage #wip
 		<h1>Dedications></h1>
 		<p>A few words to who I dedicate this software to...</p>
 		
+		<blockquote>
 		
+			$dedicationMessage
+		
+		</bockquote>
 	
 	</font></center></body>
 
