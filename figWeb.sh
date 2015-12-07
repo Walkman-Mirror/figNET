@@ -13,7 +13,21 @@ function serveFigWeb #Start the figWeb web-server
 function generateDedicationsPage #wip
 {
 	
-	echo "todo"
+	page="<html>
+	<head>
+		<title>Dedications</title>
+	</head>
+	
+	<body bgcolor=\"53c69b\"><center><font face=\"Liberation Sans\">
+	
+		<h1>Dedications></h1>
+		<p>A few words to who I dedicate this software to...</p>
+		
+		
+	
+	</font></center></body>
+
+</html>"
 	
 }
 
