@@ -29,7 +29,7 @@ function checkConfig #Check if all the variables in the `node.conf` configuratio
 
 	if [ "$internalIP" = "" ] || [ "$internalPort" = "" ] || [ "$publicIP" = "" ] || [ "$publicPort" = "" ] || [ "$nodeName" = "" ] || [ "$nodeLocation" = "" ] || [ "$nodeOperator" = "" ] || [ "$sleepBtwnNodeSync" = "" ] || [ "$sleepBtwnNetworkSync" = "" ] || [ "$usefigCTL" = "" ]
 	then
-		echo "Configuration file 'node.conf' has variables missing values."
+		outText "Configuration file 'node.conf' has variables missing values."
 		exit
 	fi
 
