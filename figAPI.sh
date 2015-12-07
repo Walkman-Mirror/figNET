@@ -192,6 +192,7 @@ function getImportSet #Used for services development (wip - DO not use)
 	source figWeb.sh #Get access to the functions in `figWeb.sh`
 	source figInfo.sh #Get access to variables containing info about the current release of the figNET suite
 	source figAutoPeer.sh #Get access to all the auto-peering-related functions
+	source figCleaner.sh
 
 	source node.info #Get access to configuration variables
 	#source figInfo.sh
