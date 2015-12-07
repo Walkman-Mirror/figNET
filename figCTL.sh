@@ -32,13 +32,19 @@ function addServiceInteractive #Interactively add a new service to the network
 
 	if [ $(isNamespaceTaken "$serviceName") = "false" ]
 	then
-		if [ "$genInfoPage" = "yes" ]
+		if [ ! "$serviceName" = "dedications" ] && [ ! "$serviceName" = "nodes" ] && [ ! "$serviceName" = "index" ] && [ ! "$serviceName" = "services" ]
 		then
-			genInfoPage="true"
+			if [ "$genInfoPage" = "yes" ]
+			then
+				genInfoPage="true"
+			else
+				genInfoPage="false"
+			fi
+			addService "$serviceName" "$serviceFriendlyName" "$serviceDescription" "$genInfoPage"
 		else
-			genInfoPage="false"
+			echo -e "Error occured while creating service: '$serviceName'!\n"
+			echo "The namespace '$serviceName' is a reserved namespace and cannot be used!"
 		fi
-		addService "$serviceName" "$serviceFriendlyName" "$serviceDescription" "$genInfoPage"
 	else
 		echo -e "Error occured while creating service: '$serviceName'!\n"
 		echo "The namespace '$serviceName' has already been taken."
