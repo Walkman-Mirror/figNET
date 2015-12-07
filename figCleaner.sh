@@ -6,7 +6,11 @@
 function cleanFigWebDebris
 {
 
-    
+    files=0
+    for file in $(ls figWeb/)
+    do
+        rm $file
+    done
 
 }
 
