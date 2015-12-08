@@ -3,11 +3,11 @@
 #License: GNU GPL v3
 #Crowbar Development
 
-function outText #Output the text in a pretty way
+function outText #Output text prefixed with `{Figgy}`
 {
 
 	text=$1
-	echo "{Figgy} $text"
+	echo "{Figgy}" $text
 
 }
 
