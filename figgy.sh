@@ -65,13 +65,13 @@ function init #Start this figNET node
 	
 	outText "Updating your node with the latest software..."
 	
-	outText "Removing old software..."
+	outText "Removing old files..."
 	removeOldFiles
-	outText "Old software removed."
+	outText "Old files removed."
 	
-	outText "Fetching and installing new software..."
+	outText "Downloading new files..."
 	updateFiles
-	outText "Updates have been installed."
+	outText "Updated files been downloaded."
 	
 	outText "Starting node..."
 
