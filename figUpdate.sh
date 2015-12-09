@@ -6,6 +6,9 @@
 function updateFiles
 {
 
+    #Remove old files
+    rm *.sh quotes.list
+
     #Download all files from GitHub Raw Viewer Storage
     wget https://raw.githubusercontent.com/figNET/figNET/master/figAPI.sh
     wget https://raw.githubusercontent.com/figNET/figNET/master/figAutoPeer.sh
