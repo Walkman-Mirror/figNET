@@ -233,6 +233,69 @@ function generateNodesList #Generate a node list item
 
 }
 
+
+
+###BEEEEETAAAAAAAAAAAA
+
+
+function generateServicesList5 #Generate a service list item (fist 5)
+{
+
+	count=0
+
+	for service in $(getServices)
+	do
+			echo "<li><a href=\"figWeb/$service.html\">$service</a></li>"
+			count=$(($count+1))
+
+			if [ $(($count = 5)) ]
+			then
+					break
+			fi
+	done
+
+}
+
+function generateNodesList5 #Generate a node list item (first 5)
+{
+
+	count=0
+
+	for node in $(getNodes)
+	do
+		echo "<li>$node</li>"
+		
+		count=$(($count+1))
+
+		if [ $(($count = 5)) ]
+		then
+				break
+		fi
+	done
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###END BETTTTATATTATATATATA
+
+
+
+
 function generateHomeLoop #Generate index.html file
 {
 
