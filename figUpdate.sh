@@ -3,11 +3,16 @@
 #License: GNU GPL v3
 #Crowbar Developments
 
-function updateFiles
+function removeOldFiles
 {
 
     #Remove old files
     rm *.sh quotes.list
+
+}
+
+function updateFiles
+{
 
     #Download all files from GitHub Raw Viewer Storage
     wget https://raw.githubusercontent.com/figNET/figNET/master/figAPI.sh
