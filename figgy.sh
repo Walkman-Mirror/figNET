@@ -45,6 +45,7 @@ function importLibs #Import all the code we require
 	source figInfo.sh #Get access to variables containing info about the current release of the figNET suite
 	source figAutoPeer.sh #Get access to all the auto-peering-related functions
 	source figCleaner.sh #Get access to cleaning code
+	source figUpdater.sh #Get access to update code
 
 }
 
@@ -58,7 +59,20 @@ function killFig #Stop this figNET node
 function init #Start this figNET node
 {
 
+	outText "Importing code into RAM..."
 	importLibs
+	outText "Code imported into RAM."
+	
+	outText "Updating your node with the latest software..."
+	
+	outText "Removing old software..."
+	removeOldFiles
+	outText "Old software removed."
+	
+	outText "Fetching and installing new software..."
+	updateFiles
+	outText "Updates have been installed."
+	
 	outText "Starting node..."
 
 	outText "Starting node sync..."
