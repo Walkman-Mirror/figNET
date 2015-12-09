@@ -45,7 +45,7 @@ function generateServicesListPage #Generate the list of services page
 
 	page="<html>
 	<head>
-		<title>Services | figNET</title>
+		<title>Services | figWeb</title>
 	</head>
 
 	<body><center><font face=\"Liberation Sans\">
@@ -97,7 +97,7 @@ function generateNodesListPage #Generate the list of nodes page
 
 		page="<html>
 	<head>
-		<title>Nodes | figNET</title>
+		<title>Nodes | figWeb</title>
 	</head>
 
 	<body><center><font face=\"Liberation Sans\">
@@ -150,7 +150,7 @@ function generateInfoPage #Generate infoPage for a specified service
 
 	page="<html>
 	<head>
-		<title>Information for $serviceName | figNET</title>
+		<title>Information for $serviceName | figWeb</title>
 	</head>
 
 	<body><center><font face=\"Liberation Sans\">
@@ -241,7 +241,7 @@ function generateHomeLoop #Generate index.html file
 
 		page="<html>
 		<head>
-			<title>figWeb for figNET on $nodeName</title>
+			<title>$nodeName | figWeb</title>
 		</head>
 
 		<body><center><font face=\"Liberation Sans\">
