@@ -326,13 +326,13 @@ function generateHomeLoop #Generate index.html file
 			</ol>
 
 			<h2><u>Node information</u></h2>
-			<p><b>Node's name: </b>$nodeName</p>
-			<p><b>Node's Sync Server: </b>$publicIP:$publicPort</p>
-			<p><b>Node's hostname: </b>$HOSTNAME</p>
-			<p><b>Node's OS: </b>$(uname --operating-system)</p>
-			<p><b>Node's location: </b>$nodeLocation</p>
+			<p><b>Node name: </b>$nodeName</p>
+			<p><b>Node Sync Server: </b>$publicIP:$publicPort</p>
+			<p><b>Node hostname: </b>$HOSTNAME</p>
+			<p><b>Node OS: </b>$(uname --operating-system)</p>
+			<p><b>Node location: </b>$nodeLocation</p>
 			<p><b>SysOp: </b>$nodeOperator</p>
-			<p><b>SysOp's email address: </b><a href=\"mailto:$nodeOperatorMail\">$nodeOperatorMail</a></p>
+			<p><b>SysOp email address: </b><a href=\"mailto:$nodeOperatorMail\">$nodeOperatorMail</a></p>
 
 		</font></center></body>
 
