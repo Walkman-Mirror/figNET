@@ -73,7 +73,7 @@ function generateServicesListPage #Generate the list of services page
 		<br>
 		<br>
                 <a href=\"figWeb/dedications.html\"><code>Built avec <3.</code></a>
-		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
+		<p>fig<b>NET</b> is <a href=\"https://gnu.org/philosophy/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
         </font></center></footer>
@@ -125,7 +125,7 @@ function generateNodesListPage #Generate the list of nodes page
 		<br>
 		<br>
                 <a href=\"figWeb/dedications.html\"><code>Built avec <3.</code></a>
-		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
+		<p>fig<b>NET</b> is <a href=\"https://gnu.org/philosophy/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
         </font></center></footer>
@@ -180,7 +180,7 @@ function generateInfoPage #Generate infoPage for a specified service
 		<br>
 		<br>
                 <a href=\"figWeb/dedications.html\"><code>Built avec <3.</code></a>
-		<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
+		<p>fig<b>NET</b> is <a href=\"https://gnu.org/philosophy/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 		<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
         </font></center></footer>
@@ -346,7 +346,7 @@ function generateHomeLoop #Generate index.html file
 			<br>
 			<br>
         	        <a href=\"figWeb/dedications.html\"><code>Built avec <3.</code></a>
-			<p>fig<b>NET</b> is <a href=\"https://gnu.org/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
+			<p>fig<b>NET</b> is <a href=\"https://gnu.org/philosophy/free-sw.html\">Free Sofware</a> and is licensed under the GNU GPL v3.</p>
 			<p>This is a project created and maintained by <a href=\"https://deavmi.github.io\">Tristan B. Kildaire (Deavmi)</a>. It is part of Crowbar Developments.</p>
 
 		</font></center></footer>
