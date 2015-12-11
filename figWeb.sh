@@ -218,7 +218,7 @@ function generateServicesList #Generate a service list item
 
 	for service in $(getServices)
 	do
-		echo "<li><a href=\"http://$figWebPublicIP:$figWebPublicPort/figWeb/$service.html\">$service</a></li>"
+		echo "<li><a href=\"figWeb/$service.html\">$service</a></li>"
 	done
 
 }
