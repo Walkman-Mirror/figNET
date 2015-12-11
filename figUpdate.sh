@@ -16,16 +16,16 @@ function updateFiles
 
     #Download all files from GitHub Raw Viewer Storage
     root="https://raw.githubusercontent.com/figNET/figNET/master"
-    wget $root/figAPI.sh --progress=dot
-    wget $root/figAutoPeer.sh --progress=dot
-    wget $root/figCTL.sh 
-    wget $root/figCleaner.sh
-    wget $root/figInfo.sh --progress=bar
-    wget $root/figNode.sh
-    wget $root/figQuote.sh
-    wget $root/figUpdate.sh
-    wget $root/figWeb.sh
-    wget $root/figgy.sh
-    wget $root/quotes.list
+    wget $root/figAPI.sh --quiet
+    wget $root/figAutoPeer.sh --quiet
+    wget $root/figCTL.sh --quiet
+    wget $root/figCleaner.sh --quiet
+    wget $root/figInfo.sh --quiet
+    wget $root/figNode.sh --quiet
+    wget $root/figQuote.sh --quiet
+    wget $root/figUpdate.sh --quiet
+    wget $root/figWeb.sh --quiet
+    wget $root/figgy.sh --quiet
+    wget $root/quotes.list --quiet
 
 }
