@@ -20,6 +20,7 @@ function generateDedicationsPage #Generate the dedications page
 	
 	<body bgcolor=\"53c69b\"><center><font face=\"Liberation Sans\">
 	
+		<h1>✞</h1>
 		<h1>Dedications</h1>
 		<p>A few words to who I dedicate this software to...</p>
 		
