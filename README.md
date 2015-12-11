@@ -1,4 +1,4 @@
 figNET <img src="https://camo.githubusercontent.com/ab73e900244b2b5716a998d5e1f7a520075868c5/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f652f65352f46656967652d5363686e6974742e706e67" width="45" height="45">
 ======
 
-A file decentralized network.
+A file-based decentralized network.
