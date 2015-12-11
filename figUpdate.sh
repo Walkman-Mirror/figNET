@@ -15,16 +15,17 @@ function updateFiles
 {
 
     #Download all files from GitHub Raw Viewer Storage
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figAPI.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figAutoPeer.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figCTL.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figCleaner.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figInfo.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figNode.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figQuote.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figUpdate.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figWeb.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/figgy.sh
-    wget https://raw.githubusercontent.com/figNET/figNET/master/quotes.list
+    root="https://raw.githubusercontent.com/figNET/figNET/master"
+    wget $root/figAPI.sh
+    wget $root/figAutoPeer.sh
+    wget $root/figCTL.sh
+    wget $root/figCleaner.sh
+    wget $root/figInfo.sh
+    wget $root/figNode.sh
+    wget $root/figQuote.sh
+    wget $root/figUpdate.sh
+    wget $root/figWeb.sh
+    wget $root/figgy.sh
+    wget $root/quotes.list
 
 }
