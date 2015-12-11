@@ -61,23 +61,26 @@ function init #Start this figNET node
 
 	#-- Update code --
 	
-	outText "Importing update code..."
+	if [ "$updateOnStart" = "true" ]
+	then
+		outText "Importing update code..."
 	
-	source figUpdate.sh #Get access to update code
+		source figUpdate.sh #Get access to update code
 	
-	outText "Update code has been imported."
+		outText "Update code has been imported."
 	
-	outText "Updating your node with the latest software..."
+		outText "Updating your node with the latest software..."
 	
-	outText "Removing old files..."
-	removeOldFiles
-	outText "Old files removed."
+		outText "Removing old files..."
+		removeOldFiles
+		outText "Old files removed."
 	
-	outText "Downloading new files..."
-	updateFiles
-	outText "Updated files have been downloaded."
+		outText "Downloading new files..."
+		updateFiles
+		outText "Updated files have been downloaded."
 	
-	outText "Node software has been updated."
+		outText "Node software has been updated."
+	fi
 	
 	#-- End Update code --
 
