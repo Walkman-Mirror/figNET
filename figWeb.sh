@@ -316,13 +316,13 @@ function generateHomeLoop #Generate index.html file
 			<a href=\"figWeb/services.html\"><h2><u>Services</u></h2></a>
 			<p>There are $(countServices) services running on this node.</p>
 			<ol>
-				$(generateServicesList5) #This was `$(generateServicesList)`
+				$(generateServicesList5)
 			</ol>
 
 			<a href=\"figWeb/nodes.html\"><h2><u>Nodes</u></h2></a>
 			<p>This node is connected to $(getNodesCount) nodes.</p>
 			<ol>
-				$(generateNodesList5) #This was `$(generateNodesList)`
+				$(generateNodesList5)
 			</ol>
 
 			<h2><u>Node information</u></h2>
