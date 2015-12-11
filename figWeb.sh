@@ -248,7 +248,7 @@ function generateServicesList5 #Generate a service list item (fist 5)
 			echo "<li><a href=\"figWeb/$service.html\">$service</a></li>"
 			count=$(($count+1))
 
-			if [ $(($count = 5)) ]
+			if [ $count = 5 ]
 			then
 					break
 			fi
@@ -267,7 +267,7 @@ function generateNodesList5 #Generate a node list item (first 5)
 		
 		count=$(($count+1))
 
-		if [ $(($count = 5)) ]
+		if [ $count = 5 ]
 		then
 				break
 		fi
