@@ -327,7 +327,7 @@ function generateHomeLoop #Generate index.html file
 
 			<h2><u>Node information</u></h2>
 			<p><b>Node name: </b>$nodeName</p>
-			<p><b>Node Sync Server: </b>$publicIP:$publicPort</p>
+			<p><b>Node Sync Server: </b><a href=\"http://$publicIP:$publicPort\">$publicIP:$publicPort</a></p>
 			<p><b>Node hostname: </b>$HOSTNAME</p>
 			<p><b>Node OS: </b>$(uname --operating-system)</p>
 			<p><b>Node location: </b>$nodeLocation</p>
