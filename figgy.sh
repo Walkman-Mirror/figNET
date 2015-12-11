@@ -45,6 +45,7 @@ function importLibs #Import all the code we require
 	source figInfo.sh #Get access to variables containing info about the current release of the figNET suite
 	source figAutoPeer.sh #Get access to all the auto-peering-related functions
 	source figCleaner.sh #Get access to cleaning code
+	source figUpdate.sh #Get access to update code
 
 }
 
