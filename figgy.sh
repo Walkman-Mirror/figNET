@@ -59,9 +59,7 @@ function killFig #Stop this figNET node
 function init #Start this figNET node
 {
 
-	outText "Importing code into RAM..."
-	importLibs
-	outText "Code imported into RAM."
+	#-- Update code --
 	
 	outText "Updating your node with the latest software..."
 	
@@ -71,7 +69,19 @@ function init #Start this figNET node
 	
 	outText "Downloading new files..."
 	updateFiles
-	outText "Updated files been downloaded."
+	outText "Updated files have been downloaded."
+	
+	outText "Node software has been updated."
+	
+	#-- End Update code --
+
+	#-- Import code to RAM code --
+	
+	outText "Importing code into RAM..."
+	importLibs
+	outText "Code imported into RAM."
+	
+	#-- End Import code to RAM code --
 	
 	outText "Starting node..."
 
