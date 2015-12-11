@@ -228,7 +228,7 @@ function generateNodesList #Generate a node list item
 
 	for node in $(getNodes)
 	do
-		echo "<li>$node</li>"
+		echo "<li><a href=\"http://$node\">$node</a></li>"
 	done
 
 }
@@ -263,7 +263,7 @@ function generateNodesList5 #Generate a node list item (first 5)
 
 	for node in $(getNodes)
 	do
-		echo "<li>$node</li>"
+		echo "<li><a href=\"http://$node\">$node</a></li>"
 		
 		count=$(($count+1))
 
