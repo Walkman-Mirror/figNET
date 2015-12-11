@@ -16,7 +16,7 @@ function updateFiles
 
     #Download all files from GitHub Raw Viewer Storage
     root="https://raw.githubusercontent.com/figNET/figNET/master"
-    wget $root/figAPI.sh
+    wget $root/figAPI.sh --progress-type=dot
     wget $root/figAutoPeer.sh
     wget $root/figCTL.sh
     wget $root/figCleaner.sh
