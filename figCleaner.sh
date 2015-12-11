@@ -19,3 +19,4 @@ function cleanUp #Cleanup many aspects of your
     cleanFigWebDebris #Cleanup `figWeb/` directory
 
 }
+
