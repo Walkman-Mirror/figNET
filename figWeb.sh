@@ -356,7 +356,7 @@ function generateHomeLoop #Generate index.html file
 
 		echo "$page" > figWeb/index.html
 
-		sleep $figWebHomeRefresh #Wait 60 seconds before re-generating a fresh figWeb `index.html` file (in infoPage/index.html)
+		sleep $figWebHomeRefresh #Wait gievn amount of seconds before re-generating a fresh figWeb `index.html` file (in infoPage/index.html)
 
 	done
 
