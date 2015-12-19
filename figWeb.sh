@@ -305,6 +305,7 @@ function generateHomeLoop #Generate index.html file
 
 		page="<html>
 		<head>
+			<meta charset="utf-8">
 			<title>$nodeName | figWeb</title>
 		</head>
 
